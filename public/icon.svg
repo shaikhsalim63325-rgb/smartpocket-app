@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Inner Soft Glow -->
+  <circle cx="256" cy="180" r="140" fill="#FFFFFF" fill-opacity="0.12" />
+
+  <!-- Graduation Cap & Wallet Emblem -->
+  <g filter="url(#shadow)">
+    <!-- Cap Diamond Top -->
+    <polygon points="256,120 420,195 256,270 92,195" fill="#FFFFFF" />
+
+    <!-- Cap Tassel string and pendant -->
+    <path d="M370,215 L370,300" stroke="#FDE047" stroke-width="8" stroke-linecap="round" />
+    <circle cx="370" cy="308" r="14" fill="#FDE047" />
+
+    <!-- Wallet Body Base Under Cap -->
+    <path d="M160,265 L160,355 C160,375 176,392 196,392 L316,392 C336,392 352,375 352,355 L352,265" fill="#FFFFFF" fill-opacity="0.95" />
+
+    <!-- Wallet Clasp & Coin Accent -->
+    <path d="M220,310 L292,310 C298,310 304,316 304,322 L304,338 C304,344 298,350 292,350 L220,350 C214,350 208,344 208,338 L208,322 C208,316 214,310 220,310 Z" fill="#6366F1" />
+    <circle cx="280" cy="330" r="6" fill="#FDE047" />
+  </g>
+</svg>
